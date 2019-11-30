@@ -6,7 +6,7 @@ Hockeypuck is an OpenPGP public keyserver.
 
 ## Any platform/arch
 
-With Go 1.12 installed, from this directory:
+With Go 1.15 installed, from this directory:
 
     export GOPATH=$(pwd)
     go build hockeypuck/server/cmd/...

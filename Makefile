@@ -2,7 +2,7 @@ PROJECTPATH = $(dir $(realpath $(firstword $(MAKEFILE_LIST))))
 export GOPATH := $(PROJECTPATH)
 export GOCACHE := $(GOPATH)/.gocache
 export GOROOT :=
-export PATH := /usr/lib/go-1.12/bin:$(PATH)
+export PATH := /usr/lib/go-1.15/bin:$(PATH)
 
 project = hockeypuck
 
@@ -49,7 +49,7 @@ install-build-depends:
 	    debhelper \
 		dh-systemd \
 	    git-buildpackage \
-	    golang-1.12  # Requires ppa:canonical-sysadmins/golang
+	    golang-1.15  # Requires ppa:canonical-sysadmins/golang
 
 lint: lint-go
 
